@@ -1,0 +1,83 @@
+//colors
+$blue: #27A9D3;
+$white: #f8f8f8;
+$black: #333333;
+
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto');
+
+//styles
+body {
+	background-color: $white;
+}
+
+a {
+	color: $black;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	text-decoration: none;
+	font-size: 1em;
+	letter-spacing: 0.05em;
+
+	transition: all 0.3s ease;
+
+	&:hover {
+		color: $blue;
+	}
+}
+
+nav {
+	position: fixed;
+	float: left;
+	width: 250px;
+	height: 100vh;
+	top: 0;
+	left: -210px;
+	background-color: $white;
+	box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+
+	transition: all 0.5s ease;
+
+	&:hover {
+		left: 0;
+
+		& .menuButton {
+			opacity: 0;
+		}
+	}
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul li {
+	padding-top: 1em;
+}
+
+.logo {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 1.7em;
+	text-transform: uppercase;
+	color: $blue;
+	margin-left: 20vw;
+	margin-top: 25px;
+	margin-right: 5vw;
+}
+
+nav .menuButton {
+	background-image: url('images/burgerButton.svg');
+	height:18px;
+	width: 25px;
+	float: right;
+	margin-right: 8px;
+	position: relative;
+	top: -205px;
+
+	transition: all 0.5s ease;
+
+	&:hover {
+		fill: $blue;
+	}
+}
