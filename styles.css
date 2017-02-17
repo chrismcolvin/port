@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto");
+* {
+  box-sizing: border-box; }
+
 body {
   background-color: #f8f8f8; }
 
@@ -17,7 +20,7 @@ nav {
   position: fixed;
   float: left;
   width: 250px;
-  height: 100vh;
+  height: 100%;
   top: 0;
   left: -210px;
   background-color: #f8f8f8;
@@ -25,8 +28,6 @@ nav {
   transition: all 0.5s ease; }
   nav:hover {
     left: 0; }
-    nav:hover .menuButton {
-      opacity: 0; }
 
 nav ul {
   list-style-type: none; }
@@ -35,25 +36,94 @@ nav ul li {
   padding-top: 1em; }
 
 .logo {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 1.7em;
-  text-transform: uppercase;
-  color: #27A9D3;
-  margin-left: 20vw;
-  margin-top: 25px;
-  margin-right: 5vw; }
+  width: 100vw;
+  padding-bottom: 10px;
+  background-color: #333333;
+  padding-left: 60px;
+  padding-top: 10px; }
+  .logo svg {
+    width: 50px;
+    height: 50px;
+    cursor: pointer; }
+
+.logo svg:hover polygon {
+  stroke: #27A9D3;
+  cursor: pointer; }
 
 nav .menuButton {
-  background-image: url("images/burgerButton.svg");
   height: 18px;
   width: 25px;
   float: right;
-  margin-right: 8px;
+  margin-right: 2px;
   position: relative;
-  top: -205px;
+  top: -210px;
+  font-family: monospace;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 10px;
   transition: all 0.5s ease; }
   nav .menuButton:hover {
-    fill: #27A9D3; }
+    opacity: 0; }
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 0.05em;
+  margin-left: 60px;
+  margin-right: 20px;
+  padding-top: 10px; }
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: #333333;
+  margin-left: 60px;
+  margin-right: 20px;
+  line-height: 1.2em; }
+  p img {
+    width: calc(100% + 40px);
+    height: auto;
+    margin-left: -20px; }
+
+@media screen and (min-width: 400px) {
+  img {
+    margin-top: 10px; } }
+@media screen and (min-width: 700px) {
+  .logo {
+    padding-left: 15vw; }
+
+  h1, p {
+    margin-left: 15vw;
+    margin-right: 10vw; }
+
+  p img {
+    width: calc(100% + 25vw);
+    margin-left: -15vw; } }
+@media screen and (min-width: 1000px) {
+  nav {
+    left: 0;
+    top: 74px;
+    padding-top: 5px; }
+    nav .menuButton {
+      display: none; }
+
+  .logo {
+    padding-left: 36px;
+    position: fixed;
+    top: 0;
+    left: 0; }
+
+  h1 {
+    margin-top: 100px; }
+
+  h1, p {
+    margin-left: calc(6vw + 250px);
+    margin-right: 6vw; }
+
+  p img {
+    width: calc(100% + 12vw);
+    margin-left: -6vw; } }
 
 /*# sourceMappingURL=styles.css.map */

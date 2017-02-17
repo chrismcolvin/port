@@ -1,0 +1,56 @@
+//create media queries here
+
+@media screen and (min-width: 400px) {
+	img {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.logo {
+		padding-left: 15vw;
+	}
+
+	h1, p {
+		margin-left: 15vw;
+		margin-right: 10vw;
+	}
+
+	p img {
+		width: calc(100% + 25vw);
+		margin-left: -15vw;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	nav {
+		left: 0;
+		top: 74px;
+		padding-top: 5px;
+
+		& .menuButton {
+			display: none;
+		}
+	}
+
+	.logo {
+		padding-left: 36px;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+
+	h1 {
+		margin-top: 100px;
+	}
+
+	h1, p {
+		margin-left: calc(6vw + 250px);
+		margin-right: 6vw;
+	}
+
+	p img {
+		width: calc(100% + 12vw);
+		margin-left: -6vw;
+	}
+}

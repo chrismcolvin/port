@@ -7,6 +7,11 @@ $black: #333333;
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto');
 
 //styles
+
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background-color: $white;
 }
@@ -30,7 +35,7 @@ nav {
 	position: fixed;
 	float: left;
 	width: 250px;
-	height: 100vh;
+	height: 100%;
 	top: 0;
 	left: -210px;
 	background-color: $white;
@@ -40,10 +45,6 @@ nav {
 
 	&:hover {
 		left: 0;
-
-		& .menuButton {
-			opacity: 0;
-		}
 	}
 }
 
@@ -56,28 +57,69 @@ nav ul li {
 }
 
 .logo {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
-	font-size: 1.7em;
-	text-transform: uppercase;
-	color: $blue;
-	margin-left: 20vw;
-	margin-top: 25px;
-	margin-right: 5vw;
+	width: 100vw;
+	padding-bottom: 10px;
+	background-color: $black;
+	padding-left: 60px;
+	padding-top: 10px;
+
+	& svg {
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+	}
+}
+
+.logo svg:hover polygon {
+	stroke: $blue;
+	cursor: pointer;
 }
 
 nav .menuButton {
-	background-image: url('images/burgerButton.svg');
 	height:18px;
 	width: 25px;
 	float: right;
-	margin-right: 8px;
+	margin-right: 2px;
 	position: relative;
-	top: -205px;
+	top: -210px;
+	font-family: monospace;
+	font-size: 13px;
+	text-transform: uppercase;
+	line-height: 10px;
 
 	transition: all 0.5s ease;
 
 	&:hover {
-		fill: $blue;
+		opacity: 0;
 	}
 }
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.3em;
+	font-weight: 400;
+	color: $black;
+	letter-spacing: 0.05em;
+	margin-left: 60px;
+	margin-right: 20px;
+	padding-top: 10px;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	color: $black;
+	margin-left: 60px;
+	margin-right: 20px;
+	line-height: 1.2em;
+
+	& img {
+		width: calc(100% + 40px);
+		height: auto;
+		margin-left: -20px;
+	}
+}
+
+//imports
+@import 'mediaQueries';
+
