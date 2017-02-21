@@ -58,15 +58,15 @@ header {
   padding-bottom: 30px; }
 
 .contact {
-  border-bottom: 2px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
   transition: all 0.1s ease; }
   .contact:hover {
-    border-bottom: 2px solid #999999; }
+    border-bottom: 1px solid #999999; }
 
 h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.3em;
-  font-weight: 400;
+  font-size: 2em;
+  font-weight: 700;
   color: #333333;
   letter-spacing: 0.05em;
   margin-left: 20px;
@@ -74,13 +74,25 @@ h1 {
   padding-top: 10px; }
 
 h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
   color: #333333;
   letter-spacing: 0.05em;
   margin-left: 20px;
   margin-right: 20px;
   line-height: 1.4em; }
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px; }
 
 p {
   font-family: 'Roboto', sans-serif;
@@ -96,7 +108,6 @@ button {
   padding: 8px 16px 8px 16px;
   margin-left: 20px;
   outline: none;
-  text-transform: uppercase;
   cursor: pointer;
   transition: all 0.1s ease; }
   button a {
@@ -117,13 +128,47 @@ p img {
 
 .projects {
   padding-bottom: 30px; }
+  .projects h2, .projects p {
+    margin-bottom: 5px; }
+  .projects p {
+    margin-top: 0; }
+  .projects button {
+    margin-top: 5px;
+    margin-bottom: 25px; }
 
-.projects h2 {
-  margin-bottom: 0;
-  margin-top: 0; }
-
-.projects p {
-  margin-top: 0; }
+form {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9em;
+  color: #333333; }
+  form input, form textarea {
+    margin-bottom: 10px;
+    margin-top: 3px;
+    width: 75vw;
+    background-color: #f8f8f8;
+    outline: none;
+    border: 1px solid gainsboro; }
+  form input {
+    max-width: 300px; }
+  form textarea {
+    height: 75px;
+    max-width: 400px; }
+  form input[type=submit] {
+    width: 75px;
+    background-color: transparent;
+    border: 2px solid #333333;
+    outline: none;
+    transition: all 0.1s ease;
+    padding: 4px 0 4px 0;
+    cursor: pointer; }
+    form input[type=submit]:hover {
+      color: #f8f8f8;
+      background-color: #333333;
+      width: 85px; }
+  form span {
+    color: fireBrick; }
 
 footer {
   width: 100vw;
@@ -132,8 +177,15 @@ footer {
   padding-bottom: 1px;
   border-top: 1px solid gainsboro; }
 
+.divider {
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 1px;
+  background-color: gainsboro; }
+
 @media screen and (min-width: 700px) and (max-width: 999px) {
-  .logo, nav ul, h1, h2, p, button {
+  .logo, nav ul, h1, h2, h3, p, button, form, .divider {
     margin-left: 10vw;
     margin-right: 10vw; }
 
@@ -141,12 +193,12 @@ footer {
     width: calc(100% + 20px);
     margin-left: -10px; } }
 @media screen and (min-width: 1000px) {
-  h1, h2, p, button {
+  h1, h2, h3, p, button, form, .divider {
     margin-left: 23vw;
     margin-right: 23vw; }
 
   h1 {
-    padding-top: 40px; }
+    padding-top: 20px; }
 
   p img {
     width: calc(100% + 20px);
@@ -168,18 +220,34 @@ footer {
     nav .logo, nav nav ul {
       margin-left: 20px; }
     nav .social {
-      padding-top: 10px; } }
+      padding-top: 10px; }
+
+  footer {
+    width: auto;
+    margin-left: 185px;
+    margin-right: 0; }
+    footer p {
+      margin-left: calc(23vw - 185px); } }
 @media screen and (min-width: 1600px) {
-  h1, h2, p, button {
+  h1, h2, h3, p, button, form, .divider {
     margin-left: 30vw;
-    margin-right: 30vw; } }
+    margin-right: 30vw; }
+
+  footer p {
+    margin-left: calc(30vw - 185px); } }
 @media screen and (min-width: 2400px) {
-  h1, h2, p, button {
+  h1, h2, h3, p, button, form, .divider {
     margin-left: 32vw;
-    margin-right: 32vw; } }
+    margin-right: 32vw; }
+
+  footer p {
+    margin-left: calc(32vw - 185px); } }
 @media screen and (min-width: 3500px) {
-  h1, h2, p, button {
+  h1, h2, h3, p, button, form, .divider {
     margin-right: 37vw;
-    margin-left: 37vw; } }
+    margin-left: 37vw; }
+
+  footer p {
+    margin-left: calc(37vw - 185px); } }
 
 /*# sourceMappingURL=styles.css.map */

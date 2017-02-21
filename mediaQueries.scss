@@ -1,7 +1,7 @@
 //media queries here
 
 @media screen and (min-width: 700px) and (max-width: 999px) {
-	.logo, nav ul, h1, h2, p, button {
+	.logo, nav ul, h1, h2, h3, p, button, form, .divider {
 		margin-left: 10vw;
 		margin-right: 10vw;
 	}
@@ -13,13 +13,13 @@
 }
 
 @media screen and (min-width: 1000px) {
-	h1, h2, p, button {
+	h1, h2, h3, p, button, form, .divider {
 		margin-left: 23vw;
 		margin-right: 23vw;
 	}
 
 	h1 {
-		padding-top: 40px;
+		padding-top: 20px;
 	}
 
 	p img {
@@ -53,25 +53,47 @@
 			padding-top: 10px;
 		}
 	}
+
+	footer {
+		width: auto;
+		margin-left: 185px;
+		margin-right: 0;
+
+		p {
+			margin-left: calc(23vw - 185px);
+		}
+	}
 }
 
 @media screen and (min-width: 1600px) {
-	h1, h2, p, button {
+	h1, h2, h3, p, button, form, .divider {
 		margin-left: 30vw;
 		margin-right: 30vw;
+	}
+
+	footer p {
+		margin-left: calc(30vw - 185px);
 	}
 }
 
 @media screen and (min-width: 2400px) {
-	h1, h2, p, button {
+	h1, h2, h3, p, button, form, .divider {
 		margin-left: 32vw;
 		margin-right: 32vw;
+	}
+
+	footer p {
+		margin-left: calc(32vw - 185px);
 	}
 }
 
 @media screen and (min-width: 3500px) {
-	h1, h2, p, button {
+	h1, h2, h3, p, button, form, .divider {
 		margin-right: 37vw;
 		margin-left: 37vw;
+	}
+
+	footer p {
+		margin-left: calc(37vw - 185px);
 	}
 }

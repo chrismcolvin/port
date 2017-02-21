@@ -4,6 +4,7 @@ $white: #f8f8f8;
 $black: #333333;
 $grey: #999999;
 $lightGrey: gainsboro;
+$red: fireBrick;
 
 //fonts
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto');
@@ -13,6 +14,8 @@ $lightGrey: gainsboro;
 body {
 	background-color: $white;
 }
+
+//styling for nav and everything in it
 
 .logo {
 	margin-top: 20px;
@@ -85,18 +88,20 @@ header {
 }
 
 .contact {
-	border-bottom: 2px solid $lightGrey;
+	border-bottom: 1px solid $lightGrey;
 	transition: all 0.1s ease;
 
 	&:hover {
-		border-bottom: 2px solid $grey;
+		border-bottom: 1px solid $grey;
 	}
 }
 
+//general content styling
+
 h1 {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.3em;
-	font-weight: 400;
+	font-size: 2em;
+	font-weight: 700;
 	color: $black;
 	letter-spacing: 0.05em;
 	margin-left: 20px;
@@ -105,13 +110,26 @@ h1 {
 }
 
 h2 {
-	font-family: 'Roboto', sans-serif;
-	font-size: 1em;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	font-weight: 400;
 	color: $black;
 	letter-spacing: 0.05em;
 	margin-left: 20px;
 	margin-right: 20px;
 	line-height: 1.4em;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8em;
+	font-weight: 700;
+	color: $black;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
 }
 
 p {
@@ -123,13 +141,14 @@ p {
 	line-height: 1.4em;
 }
 
+//buttons
+
 button {
 	background-color: transparent;
 	border: 2px solid $black;
 	padding: 8px 16px 8px 16px;
 	margin-left: 20px;
 	outline: none;
-	text-transform: uppercase;
 	cursor: pointer;
 	transition: all 0.1s ease; 
 
@@ -155,18 +174,75 @@ p img {
 	padding-bottom: 20px;
 }
 
+//specific styling for projects content, also used for services
+
 .projects {
 	padding-bottom: 30px;
+
+	h2, p {
+		margin-bottom: 5px;
+	}
+
+	p {
+		margin-top: 0;
+	}
+
+	button {
+		margin-top: 5px;
+		margin-bottom: 25px;
+	}
 }
 
-.projects h2 {
-	margin-bottom: 0;
-	margin-top: 0;
+//form styling
+
+form {
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.9em;
+	color: $black;
+
+	input, textarea {
+		margin-bottom: 10px;
+		margin-top: 3px;
+		width: 75vw;
+		background-color: $white;
+		outline: none;
+		border: 1px solid $lightGrey;
+	}
+
+	input {
+		max-width: 300px;
+	}
+
+	textarea {
+		height: 75px;
+		max-width: 400px;
+	}
+
+	input[type=submit] {
+		width: 75px;
+		background-color: transparent;
+		border: 2px solid $black;
+		outline: none;
+		transition: all 0.1s ease;
+		padding: 4px 0 4px 0;
+		cursor: pointer;
+
+		&:hover {
+			color: $white;
+			background-color: $black;
+			width: 85px;
+		}
+	}
+
+	span {
+		color: $red;
+	}
 }
 
-.projects p {
-	margin-top: 0;
-}
+//footer styling
 
 footer {
 	width: 100vw;
@@ -174,6 +250,16 @@ footer {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	border-top: 1px solid $lightGrey;
+}
+
+//divider
+
+.divider {
+	width: auto;
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 1px;
+	background-color: $lightGrey;
 }
 
 //imports
