@@ -128,13 +128,27 @@ p img {
 
 .projects {
   padding-bottom: 30px; }
+  .projects h2 {
+    margin-top: 5px; }
   .projects h2, .projects p {
     margin-bottom: 5px; }
   .projects p {
     margin-top: 0; }
   .projects button {
-    margin-top: 5px;
-    margin-bottom: 25px; }
+    margin-top: 5px; }
+
+.project {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 60px; }
+  .project h2, .project p, .project button {
+    margin-left: 0;
+    margin-right: 0; }
+
+.project img {
+  width: 100vw;
+  height: auto;
+  margin-left: -20px; }
 
 form {
   margin-left: 20px;
@@ -149,7 +163,8 @@ form {
     width: 75vw;
     background-color: #f8f8f8;
     outline: none;
-    border: 1px solid gainsboro; }
+    border: 1px solid gainsboro;
+    border-radius: none; }
   form input {
     max-width: 300px; }
   form textarea {
@@ -185,15 +200,21 @@ footer {
   background-color: gainsboro; }
 
 @media screen and (min-width: 700px) and (max-width: 999px) {
-  .logo, nav ul, h1, h2, h3, p, button, form, .divider {
+  .logo, nav ul, h1, h2, h3, p, button, .project, form, .divider {
     margin-left: 10vw;
     margin-right: 10vw; }
 
   p img {
     width: calc(100% + 20px);
-    margin-left: -10px; } }
+    margin-left: -10px; }
+
+  .project img {
+    float: left;
+    height: 6.5em;
+    width: auto;
+    margin-right: 25px; } }
 @media screen and (min-width: 1000px) {
-  h1, h2, h3, p, button, form, .divider {
+  h1, h2, h3, p, button, .project, form, .divider {
     margin-left: 23vw;
     margin-right: 23vw; }
 
@@ -222,6 +243,12 @@ footer {
     nav .social {
       padding-top: 10px; }
 
+  .project img {
+    float: left;
+    height: 6.5em;
+    width: auto;
+    margin-right: 25px; }
+
   footer {
     width: auto;
     margin-left: 185px;
@@ -229,21 +256,21 @@ footer {
     footer p {
       margin-left: calc(23vw - 185px); } }
 @media screen and (min-width: 1600px) {
-  h1, h2, h3, p, button, form, .divider {
+  h1, h2, h3, p, button, .project, form, .divider {
     margin-left: 30vw;
     margin-right: 30vw; }
 
   footer p {
     margin-left: calc(30vw - 185px); } }
 @media screen and (min-width: 2400px) {
-  h1, h2, h3, p, button, form, .divider {
+  h1, h2, h3, p, button, .project, form, .divider {
     margin-left: 32vw;
     margin-right: 32vw; }
 
   footer p {
     margin-left: calc(32vw - 185px); } }
 @media screen and (min-width: 3500px) {
-  h1, h2, h3, p, button, form, .divider {
+  h1, h2, h3, p, button, .project, form, .divider {
     margin-right: 37vw;
     margin-left: 37vw; }
 

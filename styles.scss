@@ -179,6 +179,10 @@ p img {
 .projects {
 	padding-bottom: 30px;
 
+	h2 {
+		margin-top: 5px;
+	}
+
 	h2, p {
 		margin-bottom: 5px;
 	}
@@ -189,8 +193,24 @@ p img {
 
 	button {
 		margin-top: 5px;
-		margin-bottom: 25px;
 	}
+}
+
+.project {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 60px;
+
+	h2, p, button {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+.project img {
+	width: 100vw;
+	height: auto;
+	margin-left: -20px;
 }
 
 //form styling
@@ -210,6 +230,7 @@ form {
 		background-color: $white;
 		outline: none;
 		border: 1px solid $lightGrey;
+		border-radius: none;
 	}
 
 	input {

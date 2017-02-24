@@ -1,7 +1,7 @@
 //media queries here
 
 @media screen and (min-width: 700px) and (max-width: 999px) {
-	.logo, nav ul, h1, h2, h3, p, button, form, .divider {
+	.logo, nav ul, h1, h2, h3, p, button, .project, form, .divider {
 		margin-left: 10vw;
 		margin-right: 10vw;
 	}
@@ -10,10 +10,17 @@
 		width: calc(100% + 20px);
 		margin-left: -10px;
 	}
+
+	.project img {
+		float: left;
+		height: 6.5em;
+		width: auto;
+		margin-right: 25px;
+	}
 }
 
 @media screen and (min-width: 1000px) {
-	h1, h2, h3, p, button, form, .divider {
+	h1, h2, h3, p, button, .project, form, .divider {
 		margin-left: 23vw;
 		margin-right: 23vw;
 	}
@@ -54,6 +61,13 @@
 		}
 	}
 
+	.project img {
+		float: left;
+		height: 6.5em;
+		width: auto;
+		margin-right: 25px;
+	}
+
 	footer {
 		width: auto;
 		margin-left: 185px;
@@ -66,7 +80,7 @@
 }
 
 @media screen and (min-width: 1600px) {
-	h1, h2, h3, p, button, form, .divider {
+	h1, h2, h3, p, button, .project, form, .divider {
 		margin-left: 30vw;
 		margin-right: 30vw;
 	}
@@ -77,7 +91,7 @@
 }
 
 @media screen and (min-width: 2400px) {
-	h1, h2, h3, p, button, form, .divider {
+	h1, h2, h3, p, button, .project, form, .divider {
 		margin-left: 32vw;
 		margin-right: 32vw;
 	}
@@ -88,7 +102,7 @@
 }
 
 @media screen and (min-width: 3500px) {
-	h1, h2, h3, p, button, form, .divider {
+	h1, h2, h3, p, button, .project, form, .divider {
 		margin-right: 37vw;
 		margin-left: 37vw;
 	}
