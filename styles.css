@@ -102,6 +102,13 @@ p {
   margin-right: 20px;
   line-height: 1.4em; }
 
+p img {
+  width: 100vw;
+  height: auto;
+  margin-left: -20px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
 button {
   background-color: transparent;
   border: 2px solid #333333;
@@ -118,13 +125,6 @@ button:hover {
   background-color: #333333; }
   button:hover a {
     color: #f8f8f8; }
-
-p img {
-  width: 100vw;
-  height: auto;
-  margin-left: -20px;
-  padding-top: 20px;
-  padding-bottom: 20px; }
 
 .projects h2 {
   margin-top: 5px; }
@@ -197,6 +197,11 @@ footer {
   height: 1px;
   background-color: gainsboro; }
 
+iframe {
+  width: calc(100vw - 40px);
+  margin-left: 20px;
+  margin-right: 20px; }
+
 @media screen and (min-width: 700px) and (max-width: 999px) {
   .logo, nav ul, h1, h2, h3, p, button, .project, form, .divider {
     margin-left: 10vw;
@@ -210,6 +215,7 @@ footer {
     float: left;
     height: 6.5em;
     width: auto;
+    margin-left: 0;
     margin-right: 25px; } }
 @media screen and (min-width: 1000px) {
   h1, h2, h3, p, button, .project, form, .divider {
@@ -245,6 +251,7 @@ footer {
     float: left;
     height: 6.5em;
     width: auto;
+    margin-left: 0;
     margin-right: 25px; }
 
   footer {

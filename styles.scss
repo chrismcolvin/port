@@ -141,6 +141,14 @@ p {
 	line-height: 1.4em;
 }
 
+p img {
+	width: 100vw;
+	height: auto;
+	margin-left: -20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 //buttons
 
 button {
@@ -164,14 +172,6 @@ button:hover {
 	& a {
 		color: $white;
 	}
-}
-
-p img {
-	width: 100vw;
-	height: auto;
-	margin-left: -20px;
-	padding-top: 20px;
-	padding-bottom: 20px;
 }
 
 //specific styling for projects content, also used for services
@@ -280,6 +280,14 @@ footer {
 	margin-right: 20px;
 	height: 1px;
 	background-color: $lightGrey;
+}
+
+//codepen embeds
+
+iframe {
+	width: calc(100vw - 40px);
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 //imports
