@@ -54,9 +54,6 @@ nav .social {
   margin-top: 10px;
   padding-bottom: 10px; }
 
-header {
-  padding-bottom: 30px; }
-
 .contact {
   border-bottom: 1px solid gainsboro;
   transition: all 0.1s ease; }
@@ -138,7 +135,9 @@ button:hover {
 .project {
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gainsboro; }
   .project h2, .project p, .project button {
     margin-left: 0;
     margin-right: 0; }
@@ -194,6 +193,8 @@ footer {
   width: auto;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   height: 1px;
   background-color: gainsboro; }
 
@@ -203,9 +204,13 @@ iframe {
   margin-right: 20px; }
 
 @media screen and (min-width: 700px) and (max-width: 999px) {
-  .logo, nav ul, h1, h2, h3, p, button, .project, form, .divider {
+  .logo, nav ul, h1, h2, h3, p, button, form, .divider {
     margin-left: 10vw;
     margin-right: 10vw; }
+
+  .project {
+    margin-left: 10vw;
+    margin-right: 25vw; }
 
   p img {
     width: calc(100% + 20px);
@@ -218,9 +223,13 @@ iframe {
     margin-left: 0;
     margin-right: 25px; } }
 @media screen and (min-width: 1000px) {
-  h1, h2, h3, p, button, .project, form, .divider {
+  h1, h2, h3, p, button, form, .divider {
     margin-left: 23vw;
     margin-right: 23vw; }
+
+  .project {
+    margin-left: 23vw;
+    margin-right: 30vw; }
 
   h1 {
     padding-top: 20px; }
@@ -265,6 +274,9 @@ iframe {
     margin-left: 30vw;
     margin-right: 30vw; }
 
+  .project {
+    margin-right: 35vw; }
+
   footer p {
     margin-left: calc(30vw - 185px); } }
 @media screen and (min-width: 2400px) {
@@ -272,12 +284,18 @@ iframe {
     margin-left: 32vw;
     margin-right: 32vw; }
 
+  .project {
+    margin-right: 37vw; }
+
   footer p {
     margin-left: calc(32vw - 185px); } }
 @media screen and (min-width: 3500px) {
   h1, h2, h3, p, button, .project, form, .divider {
     margin-right: 37vw;
     margin-left: 37vw; }
+
+  .project {
+    margin-right: 43vw; }
 
   footer p {
     margin-left: calc(37vw - 185px); } }

@@ -1,9 +1,14 @@
 //media queries here
 
 @media screen and (min-width: 700px) and (max-width: 999px) {
-	.logo, nav ul, h1, h2, h3, p, button, .project, form, .divider {
+	.logo, nav ul, h1, h2, h3, p, button, form, .divider {
 		margin-left: 10vw;
 		margin-right: 10vw;
+	}
+
+	.project {
+		margin-left: 10vw;
+		margin-right: 25vw;
 	}
 
 	p img {
@@ -21,9 +26,14 @@
 }
 
 @media screen and (min-width: 1000px) {
-	h1, h2, h3, p, button, .project, form, .divider {
+	h1, h2, h3, p, button, form, .divider {
 		margin-left: 23vw;
 		margin-right: 23vw;
+	}
+
+	.project {
+		margin-left: 23vw;
+		margin-right: 30vw;
 	}
 
 	h1 {
@@ -87,6 +97,10 @@
 		margin-right: 30vw;
 	}
 
+	.project {
+		margin-right: 35vw;
+	}
+
 	footer p {
 		margin-left: calc(30vw - 185px);
 	}
@@ -98,6 +112,10 @@
 		margin-right: 32vw;
 	}
 
+	.project {
+		margin-right: 37vw;
+	}
+
 	footer p {
 		margin-left: calc(32vw - 185px);
 	}
@@ -107,6 +125,10 @@
 	h1, h2, h3, p, button, .project, form, .divider {
 		margin-right: 37vw;
 		margin-left: 37vw;
+	}
+
+	.project {
+		margin-right: 43vw;
 	}
 
 	footer p {
