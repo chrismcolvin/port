@@ -1,5 +1,6 @@
 //colors
 $blue: #27A9D3;
+$darkBlue: #0B6886;
 $white: #f8f8f8;
 $black: #333333;
 $grey: #999999;
@@ -15,10 +16,23 @@ body {
 	background-color: $white;
 }
 
+a {
+	color: $blue;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	text-decoration: none;
+	letter-spacing: 0.05em;
+
+	transition: all 0.1s ease;
+
+	&:hover {
+		color: $grey;
+	}
+}
+
 //styling for nav and everything in it
 
 .logo {
-	margin-top: 20px;
 	margin-left: 20px;
 	width: 50px;
 }
@@ -30,7 +44,7 @@ body {
 }
 
 .logo svg polygon {
-	stroke: $black;
+	stroke: $white;
 	transition: all 0.3s ease;
 }
 
@@ -39,24 +53,11 @@ body {
 	cursor: pointer;
 }
 
-a {
-	color: $black;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	text-decoration: none;
-	letter-spacing: 0.05em;
-
-	transition: all 0.1s ease;
-
-	&:hover {
-		color: $blue;
-	}
-}
-
 nav {
 	width: 100vw;
-	background-color: $white;
-	border-bottom: 1px solid $lightGrey;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	background-color: $black;
 }
 
 nav ul {
@@ -75,6 +76,14 @@ nav ul li {
 	font-size: 1em;
 }
 
+nav a {
+	color: $white;
+
+	&:hover {
+		color: $blue;
+	}
+}
+
 nav .social {
 	font-size: 0.8em;
 	margin-top: 10px;
@@ -84,12 +93,7 @@ nav .social {
 //header 
 
 .contact {
-	border-bottom: 1px solid $lightGrey;
-	transition: all 0.1s ease;
-
-	&:hover {
-		border-bottom: 1px solid $grey;
-	}
+	border-bottom: 1px solid $darkBlue;
 }
 
 //general content styling
@@ -149,7 +153,7 @@ p img {
 
 button {
 	background-color: transparent;
-	border: 2px solid $black;
+	border: 2px solid $darkBlue;
 	padding: 8px 16px 8px 16px;
 	margin-left: 20px;
 	outline: none;
@@ -157,13 +161,14 @@ button {
 	transition: all 0.1s ease; 
 
 	& a {
-		color: $black;
+		color: $darkBlue;
 		font-size: 0.8em;
 	}
 }
 
 button:hover {	
-	background-color: $black;
+	background-color: $darkBlue;
+	border: 2px solid $darkBlue;
 
 	& a {
 		color: $white;
@@ -196,7 +201,6 @@ button:hover {
 	margin-right: 20px;
 	margin-bottom: 60px;
 	padding-bottom: 20px;
-	border-bottom: 1px solid $lightGrey;
 
 	h2, p, button {
 		margin-left: 0;
@@ -241,8 +245,9 @@ form {
 
 	input[type=submit] {
 		width: 75px;
+		color: $darkBlue;
 		background-color: transparent;
-		border: 2px solid $black;
+		border: 2px solid $darkBlue;
 		outline: none;
 		transition: all 0.1s ease;
 		padding: 4px 0 4px 0;
@@ -250,7 +255,7 @@ form {
 
 		&:hover {
 			color: $white;
-			background-color: $black;
+			background-color: $darkBlue;
 			width: 85px;
 		}
 	}
@@ -278,7 +283,7 @@ footer {
 	margin-right: 20px;
 	margin-top: 40px;
 	margin-bottom: 40px;
-	height: 1px;
+	height: 2px;
 	background-color: $lightGrey;
 }
 

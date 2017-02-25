@@ -2,8 +2,17 @@
 body {
   background-color: #f8f8f8; }
 
+a {
+  color: #27A9D3;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: all 0.1s ease; }
+  a:hover {
+    color: #999999; }
+
 .logo {
-  margin-top: 20px;
   margin-left: 20px;
   width: 50px; }
 
@@ -13,27 +22,18 @@ body {
   cursor: pointer; }
 
 .logo svg polygon {
-  stroke: #333333;
+  stroke: #f8f8f8;
   transition: all 0.3s ease; }
 
 .logo svg:hover polygon {
   stroke: #27A9D3;
   cursor: pointer; }
 
-a {
-  color: #333333;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  text-decoration: none;
-  letter-spacing: 0.05em;
-  transition: all 0.1s ease; }
-  a:hover {
-    color: #27A9D3; }
-
 nav {
   width: 100vw;
-  background-color: #f8f8f8;
-  border-bottom: 1px solid gainsboro; }
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #333333; }
 
 nav ul {
   list-style-type: none;
@@ -49,16 +49,18 @@ nav ul li {
   padding-top: 5px;
   font-size: 1em; }
 
+nav a {
+  color: #f8f8f8; }
+  nav a:hover {
+    color: #27A9D3; }
+
 nav .social {
   font-size: 0.8em;
   margin-top: 10px;
   padding-bottom: 10px; }
 
 .contact {
-  border-bottom: 1px solid gainsboro;
-  transition: all 0.1s ease; }
-  .contact:hover {
-    border-bottom: 1px solid #999999; }
+  border-bottom: 1px solid #0B6886; }
 
 h1 {
   font-family: 'Montserrat', sans-serif;
@@ -108,18 +110,19 @@ p img {
 
 button {
   background-color: transparent;
-  border: 2px solid #333333;
+  border: 2px solid #0B6886;
   padding: 8px 16px 8px 16px;
   margin-left: 20px;
   outline: none;
   cursor: pointer;
   transition: all 0.1s ease; }
   button a {
-    color: #333333;
+    color: #0B6886;
     font-size: 0.8em; }
 
 button:hover {
-  background-color: #333333; }
+  background-color: #0B6886;
+  border: 2px solid #0B6886; }
   button:hover a {
     color: #f8f8f8; }
 
@@ -136,8 +139,7 @@ button:hover {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 60px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid gainsboro; }
+  padding-bottom: 20px; }
   .project h2, .project p, .project button {
     margin-left: 0;
     margin-right: 0; }
@@ -169,15 +171,16 @@ form {
     max-width: 400px; }
   form input[type=submit] {
     width: 75px;
+    color: #0B6886;
     background-color: transparent;
-    border: 2px solid #333333;
+    border: 2px solid #0B6886;
     outline: none;
     transition: all 0.1s ease;
     padding: 4px 0 4px 0;
     cursor: pointer; }
     form input[type=submit]:hover {
       color: #f8f8f8;
-      background-color: #333333;
+      background-color: #0B6886;
       width: 85px; }
   form span {
     color: fireBrick; }
@@ -195,7 +198,7 @@ footer {
   margin-right: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
-  height: 1px;
+  height: 2px;
   background-color: gainsboro; }
 
 iframe {
@@ -243,9 +246,7 @@ iframe {
     top: 0;
     left: 0;
     width: 185px;
-    height: 100vh;
-    border-bottom: none;
-    border-right: 1px solid gainsboro; }
+    height: 100vh; }
     nav ul li {
       display: block;
       padding-bottom: 5px; }
