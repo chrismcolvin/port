@@ -153,26 +153,20 @@ p img {
 
 button {
 	background-color: transparent;
-	border: 2px solid $darkBlue;
-	padding: 8px 16px 8px 16px;
+	color: $blue;
+	font-size: 0.9em;
+	border: 2px solid $blue;
+	padding: 10px 16px 10px 16px;
 	margin-left: 20px;
 	outline: none;
 	cursor: pointer;
 	transition: all 0.1s ease; 
-
-	& a {
-		color: $darkBlue;
-		font-size: 0.8em;
-	}
 }
 
 button:hover {	
-	background-color: $darkBlue;
-	border: 2px solid $darkBlue;
-
-	& a {
-		color: $white;
-	}
+	background-color: $blue;
+	border: 2px solid $blue;
+	color: $white;
 }
 
 //specific styling for projects content, also used for services
@@ -245,9 +239,9 @@ form {
 
 	input[type=submit] {
 		width: 75px;
-		color: $darkBlue;
+		color: $blue;
 		background-color: transparent;
-		border: 2px solid $darkBlue;
+		border: 2px solid $blue;
 		outline: none;
 		transition: all 0.1s ease;
 		padding: 4px 0 4px 0;
@@ -255,7 +249,7 @@ form {
 
 		&:hover {
 			color: $white;
-			background-color: $darkBlue;
+			background-color: $blue;
 			width: 85px;
 		}
 	}

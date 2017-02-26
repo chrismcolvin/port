@@ -110,21 +110,19 @@ p img {
 
 button {
   background-color: transparent;
-  border: 2px solid #0B6886;
-  padding: 8px 16px 8px 16px;
+  color: #27A9D3;
+  font-size: 0.9em;
+  border: 2px solid #27A9D3;
+  padding: 10px 16px 10px 16px;
   margin-left: 20px;
   outline: none;
   cursor: pointer;
   transition: all 0.1s ease; }
-  button a {
-    color: #0B6886;
-    font-size: 0.8em; }
 
 button:hover {
-  background-color: #0B6886;
-  border: 2px solid #0B6886; }
-  button:hover a {
-    color: #f8f8f8; }
+  background-color: #27A9D3;
+  border: 2px solid #27A9D3;
+  color: #f8f8f8; }
 
 .projects h2 {
   margin-top: 5px; }
@@ -171,16 +169,16 @@ form {
     max-width: 400px; }
   form input[type=submit] {
     width: 75px;
-    color: #0B6886;
+    color: #27A9D3;
     background-color: transparent;
-    border: 2px solid #0B6886;
+    border: 2px solid #27A9D3;
     outline: none;
     transition: all 0.1s ease;
     padding: 4px 0 4px 0;
     cursor: pointer; }
     form input[type=submit]:hover {
       color: #f8f8f8;
-      background-color: #0B6886;
+      background-color: #27A9D3;
       width: 85px; }
   form span {
     color: fireBrick; }
