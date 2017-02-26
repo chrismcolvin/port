@@ -10,7 +10,7 @@ a {
   letter-spacing: 0.05em;
   transition: all 0.1s ease; }
   a:hover {
-    color: #999999; }
+    color: #0B6886; }
 
 .logo {
   margin-left: 20px;
@@ -201,10 +201,9 @@ footer {
   height: 2px;
   background-color: gainsboro; }
 
-iframe {
-  width: calc(100vw - 40px);
-  margin-left: 20px;
-  margin-right: 20px; }
+.codepenContainer {
+  width: 100vw;
+  margin-bottom: 45px; }
 
 @media screen and (min-width: 700px) and (max-width: 999px) {
   .logo, nav ul, h1, h2, h3, p, button, form, .divider {
@@ -264,6 +263,13 @@ iframe {
     margin-left: 0;
     margin-right: 25px; }
 
+  .codepenContainer {
+    width: auto;
+    margin-left: 23vw;
+    margin-right: 23vw; }
+    .codepenContainer h2 {
+      margin-left: 0; }
+
   footer {
     width: auto;
     margin-left: 185px;
@@ -271,32 +277,53 @@ iframe {
     footer p {
       margin-left: calc(23vw - 185px); } }
 @media screen and (min-width: 1600px) {
-  h1, h2, h3, p, button, .project, form, .divider {
+  h1, h2, h3, p, button, .project, form, .divider, .codepenContainer {
     margin-left: 30vw;
     margin-right: 30vw; }
 
   .project {
     margin-right: 35vw; }
 
+  .codepenContainer {
+    width: auto;
+    margin-left: 30vw;
+    margin-right: 30vw; }
+    .codepenContainer h2 {
+      margin-left: 0; }
+
   footer p {
     margin-left: calc(30vw - 185px); } }
 @media screen and (min-width: 2400px) {
-  h1, h2, h3, p, button, .project, form, .divider {
+  h1, h2, h3, p, button, .project, form, .divider, .codepenContainer {
     margin-left: 32vw;
     margin-right: 32vw; }
 
   .project {
     margin-right: 37vw; }
 
+  .codepenContainer {
+    width: auto;
+    margin-left: 32vw;
+    margin-right: 32vw; }
+    .codepenContainer h2 {
+      margin-left: 0; }
+
   footer p {
     margin-left: calc(32vw - 185px); } }
 @media screen and (min-width: 3500px) {
-  h1, h2, h3, p, button, .project, form, .divider {
+  h1, h2, h3, p, button, .project, form, .divider, .codepenContainer {
     margin-right: 37vw;
     margin-left: 37vw; }
 
   .project {
     margin-right: 43vw; }
+
+  .codepenContainer {
+    width: auto;
+    margin-left: 37vw;
+    margin-right: 37vw; }
+    .codepenContainer h2 {
+      margin-left: 0; }
 
   footer p {
     margin-left: calc(37vw - 185px); } }

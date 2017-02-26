@@ -26,7 +26,7 @@ a {
 	transition: all 0.1s ease;
 
 	&:hover {
-		color: $grey;
+		color: $darkBlue;
 	}
 }
 
@@ -289,10 +289,9 @@ footer {
 
 //codepen embeds
 
-iframe {
-	width: calc(100vw - 40px);
-	margin-left: 20px;
-	margin-right: 20px;
+.codepenContainer {
+	width: 100vw;
+	margin-bottom: 45px;
 }
 
 //imports

@@ -37,6 +37,7 @@
 	}
 
 	h1 {
+
 		padding-top: 20px;
 	}
 
@@ -78,6 +79,16 @@
 		margin-right: 25px;
 	}
 
+	.codepenContainer {
+		width: auto;
+		margin-left: 23vw;
+		margin-right: 23vw;
+
+		h2 {
+			margin-left: 0;
+		}
+	}
+
 	footer {
 		width: auto;
 		margin-left: 185px;
@@ -90,7 +101,7 @@
 }
 
 @media screen and (min-width: 1600px) {
-	h1, h2, h3, p, button, .project, form, .divider {
+	h1, h2, h3, p, button, .project, form, .divider, .codepenContainer {
 		margin-left: 30vw;
 		margin-right: 30vw;
 	}
@@ -99,13 +110,23 @@
 		margin-right: 35vw;
 	}
 
+	.codepenContainer {
+		width: auto;
+		margin-left: 30vw;
+		margin-right: 30vw;
+
+		h2 {
+			margin-left: 0;
+		}
+	}
+
 	footer p {
 		margin-left: calc(30vw - 185px);
 	}
 }
 
 @media screen and (min-width: 2400px) {
-	h1, h2, h3, p, button, .project, form, .divider {
+	h1, h2, h3, p, button, .project, form, .divider, .codepenContainer {
 		margin-left: 32vw;
 		margin-right: 32vw;
 	}
@@ -114,19 +135,39 @@
 		margin-right: 37vw;
 	}
 
+	.codepenContainer {
+		width: auto;
+		margin-left: 32vw;
+		margin-right: 32vw;
+
+		h2 {
+			margin-left: 0;
+		}
+	}
+
 	footer p {
 		margin-left: calc(32vw - 185px);
 	}
 }
 
 @media screen and (min-width: 3500px) {
-	h1, h2, h3, p, button, .project, form, .divider {
+	h1, h2, h3, p, button, .project, form, .divider, .codepenContainer {
 		margin-right: 37vw;
 		margin-left: 37vw;
 	}
 
 	.project {
 		margin-right: 43vw;
+	}
+
+	.codepenContainer {
+		width: auto;
+		margin-left: 37vw;
+		margin-right: 37vw;
+
+		h2 {
+			margin-left: 0;
+		}
 	}
 
 	footer p {
