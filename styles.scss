@@ -1,4 +1,5 @@
 //colors
+
 $blue: #27A9D3;
 $darkBlue: #0B6886;
 $white: #f8f8f8;
@@ -7,8 +8,11 @@ $grey: #999999;
 $lightGrey: gainsboro;
 $red: fireBrick;
 
+
 //fonts
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto');
+
 
 //styles
 
@@ -29,6 +33,7 @@ a {
 		color: $darkBlue;
 	}
 }
+
 
 //styling for nav and everything in it
 
@@ -90,11 +95,18 @@ nav .social {
 	padding-bottom: 10px;
 }
 
-//header 
-
 .contact {
 	border-bottom: 1px solid $darkBlue;
 }
+
+
+//header
+
+header img {
+	width: 100vw;
+	height: auto
+}
+
 
 //general content styling
 
@@ -149,6 +161,7 @@ p img {
 	padding-bottom: 20px;
 }
 
+
 //buttons
 
 button {
@@ -168,6 +181,7 @@ button:hover {
 	border: 2px solid $blue;
 	color: $white;
 }
+
 
 //specific styling for projects content, also used for services
 
@@ -207,6 +221,7 @@ button:hover {
 	height: auto;
 	margin-left: -20px;
 }
+
 
 //form styling
 
@@ -259,15 +274,18 @@ form {
 	}
 }
 
+
 //footer styling
 
 footer {
 	width: 100vw;
 	margin-bottom: -15px;
+	margin-top: 50px;
 	padding-top: 1px;
 	padding-bottom: 1px;
 	border-top: 1px solid $lightGrey;
 }
+
 
 //divider
 
@@ -281,12 +299,14 @@ footer {
 	background-color: $lightGrey;
 }
 
+
 //codepen embeds
 
 .codepenContainer {
 	width: 100vw;
 	margin-bottom: 45px;
 }
+
 
 //imports
 @import 'mediaQueries';

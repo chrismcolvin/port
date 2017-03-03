@@ -62,6 +62,10 @@ nav .social {
 .contact {
   border-bottom: 1px solid #0B6886; }
 
+header img {
+  width: 100vw;
+  height: auto; }
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
@@ -186,6 +190,7 @@ form {
 footer {
   width: 100vw;
   margin-bottom: -15px;
+  margin-top: 50px;
   padding-top: 1px;
   padding-bottom: 1px;
   border-top: 1px solid gainsboro; }
@@ -237,6 +242,10 @@ footer {
   p img {
     width: calc(100% + 20px);
     margin-left: -10px; }
+
+  header img {
+    width: auto;
+    margin-left: 23vw; }
 
   nav {
     position: fixed;
