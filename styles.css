@@ -63,8 +63,7 @@ nav .social {
   border-bottom: 1px solid #0B6886; }
 
 header img {
-  width: 100vw;
-  height: auto; }
+  width: 100vw; }
 
 h1 {
   font-family: 'Montserrat', sans-serif;
@@ -242,10 +241,6 @@ footer {
   p img {
     width: calc(100% + 20px);
     margin-left: -10px; }
-
-  header img {
-    width: auto;
-    margin-left: 23vw; }
 
   nav {
     position: fixed;
