@@ -1,57 +1,44 @@
 //media queries here
 
-@media screen and (min-width: 700px) and (max-width: 999px) {
-	.logo, nav ul, h1, h2, h3, p, button, form, .divider {
-		margin-left: 10vw;
-		margin-right: 10vw;
-	}
-
-	.project {
-		margin-left: 10vw;
-		margin-right: 25vw;
-	}
-
-	p img {
-		width: calc(100% + 20px);
-		margin-left: -10px;
-	}
-
+@media screen and (min-width: 600px) {
 	.project img {
 		float: left;
-		height: 6.5em;
+		height: 7em;
 		width: auto;
 		margin-left: 0;
 		margin-right: 25px;
 	}
 }
 
-@media screen and (min-width: 1000px) {
-	h1, h2, h3, p, button, form, .divider {
-		margin-left: 23vw;
-		margin-right: 23vw;
+@media screen and (min-width: 700px) {
+	nav ul, h1, h2, h3, p, .project, form, .divider {
+		margin-left: auto;
+		margin-right: auto;
 	}
 
-	.project {
-		margin-left: 23vw;
-		margin-right: 30vw;
+	.codepenContainer {
+		margin: 0 auto 45px auto;
 	}
+}
 
-	h1 {
-
-		padding-top: 20px;
+@media screen and (min-width: 1410px) {
+	.codepenContainer {
+		max-width: 1024px;
 	}
+}
 
-	p img {
-		width: calc(100% + 20px);
-		margin-left: -10px;
-	}
-
+@media screen and (min-width: 1127px) {
 	nav {
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 185px;
 		height: 100vh;
+
+		ul {
+			text-align: left;
+			margin-left: 20px;
+		}
 
 		ul li {
 			display: block;
@@ -71,106 +58,7 @@
 		}
 	}
 
-	.project img {
-		float: left;
-		height: 6.5em;
-		width: auto;
-		margin-left: 0;
-		margin-right: 25px;
-	}
-
-	.codepenContainer {
-		width: auto;
-		margin-left: 23vw;
-		margin-right: 23vw;
-
-		h2 {
-			margin-left: 0;
-		}
-	}
-
-	footer {
-		width: auto;
-		margin-left: 185px;
-		margin-right: 0;
-
-		p {
-			margin-left: calc(23vw - 185px);
-		}
-	}
-}
-
-@media screen and (min-width: 1600px) {
-	h1, h2, h3, p, button, .project, form, .divider, .codepenContainer {
-		margin-left: 30vw;
-		margin-right: 30vw;
-	}
-
-	.project {
-		margin-right: 35vw;
-	}
-
-	.codepenContainer {
-		width: auto;
-		margin-left: 30vw;
-		margin-right: 30vw;
-
-		h2 {
-			margin-left: 0;
-		}
-	}
-
-	footer p {
-		margin-left: calc(30vw - 185px);
-	}
-}
-
-@media screen and (min-width: 2400px) {
-	h1, h2, h3, p, button, .project, form, .divider, .codepenContainer {
-		margin-left: 32vw;
-		margin-right: 32vw;
-	}
-
-	.project {
-		margin-right: 37vw;
-	}
-
-	.codepenContainer {
-		width: auto;
-		margin-left: 32vw;
-		margin-right: 32vw;
-
-		h2 {
-			margin-left: 0;
-		}
-	}
-
-	footer p {
-		margin-left: calc(32vw - 185px);
-	}
-}
-
-@media screen and (min-width: 3500px) {
-	h1, h2, h3, p, button, .project, form, .divider, .codepenContainer {
-		margin-right: 37vw;
-		margin-left: 37vw;
-	}
-
-	.project {
-		margin-right: 43vw;
-	}
-
-	.codepenContainer {
-		width: auto;
-		margin-left: 37vw;
-		margin-right: 37vw;
-
-		h2 {
-			margin-left: 0;
-		}
-	}
-
-	footer p {
-		margin-left: calc(37vw - 185px);
+	header {
+		margin-top: 30px;
 	}
 }

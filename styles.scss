@@ -3,15 +3,16 @@
 $blue: #27A9D3;
 $darkBlue: #0B6886;
 $white: #f8f8f8;
-$black: #333333;
-$grey: #999999;
+$black: #222;
+$darkGrey: #555;
+$grey: #777;
 $lightGrey: gainsboro;
 $red: fireBrick;
 
 
 //fonts
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway');
 
 
 //styles
@@ -39,7 +40,9 @@ a {
 
 .logo {
 	margin-left: 20px;
+	margin-right: 20px;
 	width: 50px;
+	margin: 0 auto;
 }
 
 .logo svg {
@@ -63,6 +66,9 @@ nav {
 	padding-top: 20px;
 	padding-bottom: 10px;
 	background-color: $black;
+	text-align: center;
+
+	overflow: hidden;
 }
 
 nav ul {
@@ -72,12 +78,13 @@ nav ul {
 	margin-right: 20px;
 	margin-bottom: 5px;
 	margin-top: 10px;
+	max-width: 640px;
 }
 
 nav ul li {
 	display: inline-block;
 	padding-right: 10px;
-	padding-top: 5px;
+	padding-top: 10px;
 	font-size: 1em;
 }
 
@@ -97,7 +104,7 @@ nav .social {
 
 .contact {
 	border-bottom: 1px solid $darkBlue;
-}
+} 
 
 
 //header
@@ -113,43 +120,47 @@ h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 2em;
 	font-weight: 700;
-	color: $black;
+	color: $darkGrey;
 	letter-spacing: 0.05em;
 	margin-left: 20px;
 	margin-right: 20px;
 	padding-top: 10px;
+	max-width: 640px;
 }
 
 h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.2em;
 	font-weight: 400;
-	color: $black;
+	color: $darkGrey;
 	letter-spacing: 0.05em;
 	margin-left: 20px;
 	margin-right: 20px;
 	line-height: 1.4em;
+	max-width: 640px;
 }
 
 h3 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.8em;
 	font-weight: 700;
-	color: $black;
+	color: $darkGrey;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-top: 20px;
+	max-width: 640px;
 }
 
 p {
-	font-family: 'Roboto', sans-serif;
-	font-size: 0.9em;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
 	color: $black;
 	margin-left: 20px;
 	margin-right: 20px;
-	line-height: 1.4em;
+	line-height: 1.6em;
+	max-width: 640px;
 }
 
 p img {
@@ -158,6 +169,7 @@ p img {
 	margin-left: -20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	max-width: 680px;
 }
 
 
@@ -168,8 +180,7 @@ button {
 	color: $blue;
 	font-size: 0.9em;
 	border: 2px solid $blue;
-	padding: 10px 16px 10px 16px;
-	margin-left: 20px;
+	padding: 5px 16px 5px 16px;
 	outline: none;
 	cursor: pointer;
 	transition: all 0.1s ease; 
@@ -208,6 +219,7 @@ button:hover {
 	margin-right: 20px;
 	margin-bottom: 60px;
 	padding-bottom: 20px;
+	max-width: 640px;
 
 	h2, p, button {
 		margin-left: 0;
@@ -219,6 +231,7 @@ button:hover {
 	width: 100vw;
 	height: auto;
 	margin-left: -20px;
+	max-width: 640px;
 }
 
 
@@ -231,6 +244,7 @@ form {
 	font-family: 'Roboto', sans-serif;
 	font-size: 0.9em;
 	color: $black;
+	max-width: 640px;
 
 	input, textarea {
 		margin-bottom: 10px;
@@ -274,15 +288,10 @@ form {
 }
 
 
-//footer styling
+//footer
 
-footer {
-	width: 100vw;
-	margin-bottom: -15px;
-	margin-top: 50px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	border-top: 1px solid $lightGrey;
+.footerLinks {
+	padding-bottom: 25px;
 }
 
 
@@ -296,6 +305,7 @@ footer {
 	margin-bottom: 40px;
 	height: 2px;
 	background-color: $lightGrey;
+	max-width: 640px;
 }
 
 
@@ -304,9 +314,11 @@ footer {
 .codepenContainer {
 	width: 100vw;
 	margin-bottom: 45px;
+	max-width: 680px;
 }
 
 
 //imports
+
 @import 'mediaQueries';
 
