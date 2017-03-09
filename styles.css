@@ -32,21 +32,16 @@ a {
   cursor: pointer; }
 
 nav {
-  width: 100vw;
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 10px;
   background-color: #222;
-  text-align: center;
-  overflow: hidden; }
+  text-align: center; }
 
 nav ul {
   list-style-type: none;
   padding: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 5px;
-  margin-top: 10px;
-  max-width: 640px; }
+  margin: 10px 20px 5px 20px; }
 
 nav ul li {
   display: inline-block;
@@ -114,12 +109,9 @@ p {
   max-width: 640px; }
 
 p img {
-  width: 100vw;
-  height: auto;
-  margin-left: -20px;
+  width: 100%;
   padding-top: 20px;
-  padding-bottom: 20px;
-  max-width: 680px; }
+  padding-bottom: 20px; }
 
 button {
   background-color: transparent;
@@ -156,9 +148,8 @@ button:hover {
     margin-right: 0; }
 
 .project img {
-  width: 100vw;
+  width: 100%;
   height: auto;
-  margin-left: -20px;
   max-width: 640px; }
 
 form {
@@ -212,7 +203,7 @@ form {
   max-width: 640px; }
 
 .codepenContainer {
-  width: 100vw;
+  width: 100%;
   margin-bottom: 45px;
   max-width: 680px; }
 
@@ -222,7 +213,10 @@ form {
     height: 7em;
     width: auto;
     margin-left: 0;
-    margin-right: 25px; } }
+    margin-right: 25px;
+    border: 2px solid gainsboro;
+    border-radius: 100%;
+    transition: all 0.3s ease; } }
 @media screen and (min-width: 700px) {
   nav ul, h1, h2, h3, p, .project, form, .divider {
     margin-left: auto;

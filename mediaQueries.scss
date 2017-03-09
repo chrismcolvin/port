@@ -7,6 +7,9 @@
 		width: auto;
 		margin-left: 0;
 		margin-right: 25px;
+		border: 2px solid $lightGrey;
+		border-radius: 100%;
+		transition: all 0.3s ease;
 	}
 }
 
