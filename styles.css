@@ -156,7 +156,7 @@ form {
   margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 0.9em;
   color: #222;
   max-width: 640px; }
@@ -169,15 +169,24 @@ form {
     border: 1px solid gainsboro;
     border-radius: none; }
   form input {
-    max-width: 300px; }
+    max-width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px gainsboro;
+    ouline: none; }
   form textarea {
     height: 75px;
-    max-width: 400px; }
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px gainsboro;
+    ouline: none; }
   form input[type=submit] {
     width: 75px;
+    height: auto;
     color: #27A9D3;
     background-color: transparent;
     border: 2px solid #27A9D3;
+    border-radius: 0;
     outline: none;
     transition: all 0.1s ease;
     padding: 4px 0 4px 0;
