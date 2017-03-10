@@ -273,6 +273,7 @@ form {
 		transition: all 0.1s ease;
 		padding: 4px 0 4px 0;
 		cursor: pointer;
+		box-shadow: none;
 
 		&:hover {
 			color: $white;

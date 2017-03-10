@@ -190,7 +190,8 @@ form {
     outline: none;
     transition: all 0.1s ease;
     padding: 4px 0 4px 0;
-    cursor: pointer; }
+    cursor: pointer;
+    box-shadow: none; }
     form input[type=submit]:hover {
       color: #f8f8f8;
       background-color: #27A9D3;
