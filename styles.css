@@ -62,9 +62,6 @@ nav .social {
 .contact {
   border-bottom: 1px solid #0B6886; }
 
-header img {
-  width: 100vw; }
-
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
@@ -258,6 +255,10 @@ form {
       padding-top: 10px; }
 
   header {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+
+  .headerImg img {
+    width: calc(100% + 200px);
+    margin-left: -100px; } }
 
 /*# sourceMappingURL=styles.css.map */
