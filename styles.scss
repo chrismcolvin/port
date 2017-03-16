@@ -101,6 +101,19 @@ nav .social {
 } 
 
 
+//header styles
+
+header {
+	background: linear-gradient(45deg, salmon, coral);
+	padding-top: 1px;
+	padding-bottom: 20px;
+
+	h1, h2 {
+		color: $white;
+	}
+}
+
+
 //general content styling
 
 h1 {
