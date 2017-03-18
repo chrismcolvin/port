@@ -62,12 +62,8 @@ nav .social {
 .contact {
   border-bottom: 1px solid #0B6886; }
 
-header {
-  background: linear-gradient(45deg, salmon, coral);
-  padding-top: 1px;
-  padding-bottom: 20px; }
-  header h1, header h2 {
-    color: #f8f8f8; }
+header p img {
+  padding-bottom: 0; }
 
 h1 {
   font-family: 'Montserrat', sans-serif;
@@ -262,8 +258,6 @@ form {
       padding-top: 10px; }
 
   header {
-    padding-top: 10px;
-    padding-bottom: 25px;
-    width: 100%; } }
+    padding-top: 10px; } }
 
 /*# sourceMappingURL=styles.css.map */
