@@ -40,7 +40,7 @@ if( empty($errors))
 	<title>Contact form handler</title>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-        <link rel="stylesheet" href="styles.css"> 
+        <link rel="stylesheet" href="styles_prefixed.css"> 
 </head>
 
 <body>
