@@ -3,14 +3,14 @@ body {
   background-color: #f8f8f8; }
 
 a {
-  color: #27A9D3;
+  color: #27a9d3;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   text-decoration: none;
   letter-spacing: 0.05em;
   transition: all 0.1s ease; }
   a:hover {
-    color: #0B6886; }
+    color: #0b6886; }
 
 .logo {
   margin-left: 20px;
@@ -28,14 +28,14 @@ a {
   transition: all 0.3s ease; }
 
 .logo svg:hover polygon {
-  stroke: #27A9D3;
+  stroke: #27a9d3;
   cursor: pointer; }
 
 nav {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 10px;
-  background-color: #222;
+  background-color: #222222;
   text-align: center; }
 
 nav ul {
@@ -52,7 +52,7 @@ nav ul li {
 nav a {
   color: #f8f8f8; }
   nav a:hover {
-    color: #27A9D3; }
+    color: #27a9d3; }
 
 nav .social {
   font-size: 0.8em;
@@ -60,7 +60,7 @@ nav .social {
   padding-bottom: 10px; }
 
 .contact {
-  border-bottom: 1px solid #0B6886; }
+  border-bottom: 1px solid #0b6886; }
 
 header p img {
   padding-bottom: 0; }
@@ -69,7 +69,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
   font-weight: 700;
-  color: #555;
+  color: #555555;
   letter-spacing: 0.05em;
   margin-left: 20px;
   margin-right: 20px;
@@ -80,7 +80,7 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
   font-weight: 400;
-  color: #555;
+  color: #555555;
   letter-spacing: 0.05em;
   margin-left: 20px;
   margin-right: 20px;
@@ -91,7 +91,7 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8em;
   font-weight: 700;
-  color: #555;
+  color: #555555;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-left: 20px;
@@ -102,7 +102,7 @@ h3 {
 p {
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
-  color: #222;
+  color: #222222;
   margin-left: 20px;
   margin-right: 20px;
   line-height: 1.6em;
@@ -115,17 +115,17 @@ p img {
 
 button {
   background-color: transparent;
-  color: #27A9D3;
+  color: #27a9d3;
   font-size: 0.9em;
-  border: 2px solid #27A9D3;
+  border: 2px solid #27a9d3;
   padding: 5px 16px 5px 16px;
   outline: none;
   cursor: pointer;
   transition: all 0.1s ease; }
 
 button:hover {
-  background-color: #27A9D3;
-  border: 2px solid #27A9D3;
+  background-color: #27a9d3;
+  border: 2px solid #27a9d3;
   color: #f8f8f8; }
 
 .projects h2 {
@@ -158,7 +158,7 @@ form {
   margin-bottom: 20px;
   font-family: 'Raleway', sans-serif;
   font-size: 0.9em;
-  color: #222;
+  color: #222222;
   max-width: 640px; }
   form input, form textarea {
     margin-bottom: 10px;
@@ -183,9 +183,9 @@ form {
   form input[type=submit] {
     width: 75px;
     height: auto;
-    color: #27A9D3;
+    color: #27a9d3;
     background-color: transparent;
-    border: 2px solid #27A9D3;
+    border: 2px solid #27a9d3;
     border-radius: 0;
     outline: none;
     transition: all 0.1s ease;
@@ -194,10 +194,10 @@ form {
     box-shadow: none; }
     form input[type=submit]:hover {
       color: #f8f8f8;
-      background-color: #27A9D3;
+      background-color: #27a9d3;
       width: 85px; }
   form span {
-    color: fireBrick; }
+    color: firebrick; }
 
 .footerLinks {
   padding-bottom: 25px; }
@@ -259,5 +259,3 @@ form {
 
   header {
     padding-top: 10px; } }
-
-/*# sourceMappingURL=styles.css.map */
